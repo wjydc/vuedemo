@@ -1,0 +1,343 @@
+@import '../templateCss/mainColor.less' ;
+
+//主题色
+@mainColor:#F2AC17 ;
+//边框颜色
+@boderColor:#EBF0F5 ;
+// 标题颜色
+@titleColor:#221802 ;
+@lightColor :#BFBDB8 ;
+// 阴影
+@boxShadow: 0 0 .2rem #e8ecf0 ;
+@bookShadow: 0 0 .13rem #e8ecf0 ;
+@red : #F16B59 ;
+
+
+.rechargeBox{
+    padding: 0 .47rem ;
+    .credit-lowTips{
+        height: .85rem;
+        line-height: .85rem ;
+        color: #F16B59 ;
+        background-color: #F7EBE8 ;
+        border-radius: .11rem ;
+        font-size: .35rem ;
+        padding: 0 .4rem ;
+    }
+    .my-balance{
+        overflow: hidden ;
+        height: 1.47rem;
+        line-height: 1.47rem ;
+        .ban-left{
+            float: left;
+            img,span{
+                display: inline-block;
+                vertical-align: middle ;
+            }
+            img{
+                width: .43rem ;
+                height: .43rem ;
+                margin-right: .27rem ;
+            }
+            span{
+                font-size: .4rem ;
+                color: @titleColor ;
+            }
+        }
+        .ban-right{
+            float: right ;
+            em,i{
+                display: inline-block;
+                vertical-align: middle ;
+            }
+            em{
+                font-size: .64rem ;
+                color: @titleColor ;
+            }
+            i{
+                font-size: .32rem;
+                color: @lightColor ;
+                font-style: normal ;
+            }
+        }
+    }
+    .ways{
+        position: relative;
+        .choose-way{
+            overflow: hidden;
+            height:.8rem;
+            line-height: .8rem ;
+            margin-bottom: .4rem;
+            .choose-left{
+                float: left;
+                padding-right: .4rem ;
+                img,span{
+                    
+                    display: inline-block;
+                }
+                img{
+                    height: .43rem;
+                    margin-right: .27rem ;
+                  margin-top: -.2rem ;
+                    vertical-align: middle ;
+                    
+                }
+                span{
+                    font-size: .48rem ;
+                    color: @titleColor ;
+                    vertical-align: top ;
+                }
+            }
+            .init{
+                background: url('../../Image/arrow.png') no-repeat right center;
+                background-size: .31rem .19rem ;
+            }
+            .hide{
+                background: url('../../Image/arrow-top.png') no-repeat right center;
+                background-size: .31rem .19rem ;
+            }
+            .choose-right{
+                float: right ;
+                font-size: .32rem ;
+                color: @lightColor ;
+            }
+        }
+
+        .way-list{
+            width: 100%;
+            overflow: hidden;
+            padding: .67rem 0;
+            position: absolute;
+            left: 0;
+            top: .8rem;
+            background-color: #fff;
+            z-index: 5;
+            a{
+                display: block;
+                float: left;
+                width:2.75rem;
+                height: 1.07rem;
+                margin-left: .4rem ;
+                &:first-child{
+                    margin: 0;
+                }
+               i{
+                display: block;
+                width: 100%;
+                height: 100%; 
+               }
+            }
+            .wechatPay{
+                .init{
+                    background: url('../../Image/rechar-wei.png') no-repeat;
+                    background-size: 100% 100%;
+                }
+                .active{
+                    background: url('../../Image/rechar-wei1.png') no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+            .zfbPay{
+                .init{
+                    background: url('../../Image/rechar-zhi.png') no-repeat;
+                    background-size: 100% 100%;
+                }
+                .active{
+                    background: url('../../Image/rechar-zhi1.png') no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+           
+        }
+
+        .way-detail{
+            ul{
+                overflow: hidden;
+                li{
+                    float: left;
+                    width: 45%;
+                    height: 2.4rem ;
+                    font-size: .32rem;
+                    text-align: center;
+                    background-color: #F7EBE8;
+                    border-radius: .13rem;
+                    padding-top:.27rem;
+                    margin-bottom: .4rem ;
+                    position: relative;
+                    .chargeNum{
+                        color: @titleColor ;
+                        em{
+                            font-size: .64rem;
+                        }
+                    }
+                    p{
+                        color: #999793 ;
+                    }
+                    .hot{
+                        position: absolute;
+                        top: 0;
+                        right: .4rem ;
+                        width: .43rem;
+                    }
+                }
+                .active{
+                    background: url('../../Image/recharge.png') no-repeat;
+                    background-size: 100% 100%;
+                   
+                    p{
+                        color: #fff ;
+                    }
+                }
+                li:first-child{
+                    float: left;
+                }
+                li:nth-child(2){
+                    float: right;
+                }
+                li:nth-child(3){
+                    float: left;
+                }
+                li:nth-child(4){
+                    float: right;
+                }
+                li:nth-child(5){
+                    float: left;
+                }
+                li:nth-child(6){
+                    float: right;
+                }
+                li:nth-child(7){
+                    float: left;
+                }
+                li:nth-child(8){
+                    float: right;
+                }
+                .yearMember{
+                    width: 100%;
+                    background: url('../../Image/rechar-vip.png') no-repeat;
+                    background-size: 100% 100% ;
+                    padding-top:.47rem ;
+                    .chargeNum{
+                        font-size: .48rem;
+                        color: #7A6C4E ;
+                    }
+                    p{
+                        color: #998D74 ;
+                    }
+                }
+
+                .yearMemberActive{
+                    background: url('../../Image/rechar-vip1.png') no-repeat;
+                    background-size: 100% 100% ;
+                    .chargeNum , p{
+                        color: #fff ;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.rechCopy{
+    padding: .27rem .47rem .67rem;
+    .passageway{
+        font-size: .32rem ;
+        color: #999793 ;
+        margin-bottom: .4rem ;
+    }
+    .loginOut{
+        background-color: @red;
+        color: #fff ; 
+    }
+    .copyRight{
+        p{
+            margin-bottom: .13rem ;
+        }
+    }
+}
+
+
+
+
+
+// 活动充值
+.record-Activities{
+    width:100%;
+    min-height: 4rem ;
+    background: url('../../Image/rechargetop.png') no-repeat ;
+    background-size: 100% 100% ;
+    padding:1.05rem 1.2rem .4rem 1.0rem ;
+    .recordBox{
+       background: url('../../Image/yinhaored.png') no-repeat top left;
+       background-size: .33rem auto;
+        width: 100%;
+        padding-left: 0.35rem;
+        .bigTitle{
+            font-size:.45rem ;
+            color: #F16B59 ;
+        }
+        .record-tips{
+            font-size: .37rem ;
+            color: #666564;
+            margin-top:.13rem ;
+        }
+        .record-time{
+            font-size: .32rem ;
+            color:#999793 ;
+            margin-top: .2rem ;
+        }
+    }
+   
+
+
+}
+.activityCharge{
+    .ways{
+        .way-detail{
+            ul{
+                li{
+                    width: 100%;
+                   
+                }
+            }
+           
+        }
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

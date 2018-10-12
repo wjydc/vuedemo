@@ -1,0 +1,260 @@
+.rechargeBox {
+  padding: 0 .47rem ;
+}
+.rechargeBox .credit-lowTips {
+  height: .85rem;
+  line-height: .85rem ;
+  color: #F16B59 ;
+  background-color: #F7EBE8 ;
+  border-radius: .11rem ;
+  font-size: .35rem ;
+  padding: 0 .4rem ;
+}
+.rechargeBox .my-balance {
+  overflow: hidden ;
+  height: 1.47rem;
+  line-height: 1.47rem ;
+}
+.rechargeBox .my-balance .ban-left {
+  float: left;
+}
+.rechargeBox .my-balance .ban-left img,
+.rechargeBox .my-balance .ban-left span {
+  display: inline-block;
+  vertical-align: middle ;
+}
+.rechargeBox .my-balance .ban-left img {
+  width: .43rem ;
+  height: .43rem ;
+  margin-right: .27rem ;
+}
+.rechargeBox .my-balance .ban-left span {
+  font-size: .4rem ;
+  color: #221802;
+}
+.rechargeBox .my-balance .ban-right {
+  float: right ;
+}
+.rechargeBox .my-balance .ban-right em,
+.rechargeBox .my-balance .ban-right i {
+  display: inline-block;
+  vertical-align: middle ;
+}
+.rechargeBox .my-balance .ban-right em {
+  font-size: .64rem ;
+  color: #221802;
+}
+.rechargeBox .my-balance .ban-right i {
+  font-size: .32rem;
+  color: #BFBDB8;
+  font-style: normal ;
+}
+.rechargeBox .ways {
+  position: relative;
+}
+.rechargeBox .ways .choose-way {
+  overflow: hidden;
+  height: .8rem;
+  line-height: .8rem ;
+  margin-bottom: .4rem;
+}
+.rechargeBox .ways .choose-way .choose-left {
+  float: left;
+  padding-right: .4rem ;
+}
+.rechargeBox .ways .choose-way .choose-left img,
+.rechargeBox .ways .choose-way .choose-left span {
+  display: inline-block;
+}
+.rechargeBox .ways .choose-way .choose-left img {
+  height: .43rem;
+  margin-right: .27rem ;
+  margin-top: -0.2rem;
+  vertical-align: middle ;
+}
+.rechargeBox .ways .choose-way .choose-left span {
+  font-size: .48rem ;
+  color: #221802;
+  vertical-align: top ;
+}
+.rechargeBox .ways .choose-way .init {
+  background: url('../../Image/arrow.png') no-repeat right center;
+  background-size: .31rem .19rem ;
+}
+.rechargeBox .ways .choose-way .hide {
+  background: url('../../Image/arrow-top.png') no-repeat right center;
+  background-size: .31rem .19rem ;
+}
+.rechargeBox .ways .choose-way .choose-right {
+  float: right ;
+  font-size: .32rem ;
+  color: #BFBDB8;
+}
+.rechargeBox .ways .way-list {
+  width: 100%;
+  overflow: hidden;
+  padding: .67rem 0;
+  position: absolute;
+  left: 0;
+  top: .8rem;
+  background-color: #fff;
+  z-index: 5;
+}
+.rechargeBox .ways .way-list a {
+  display: block;
+  float: left;
+  width: 2.75rem;
+  height: 1.07rem;
+  margin-left: .4rem ;
+}
+.rechargeBox .ways .way-list a:first-child {
+  margin: 0;
+}
+.rechargeBox .ways .way-list a i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rechargeBox .ways .way-list .wechatPay .init {
+  background: url('../../Image/rechar-wei.png') no-repeat;
+  background-size: 100% 100%;
+}
+.rechargeBox .ways .way-list .wechatPay .active {
+  background: url('../../Image/rechar-wei1.png') no-repeat;
+  background-size: 100% 100%;
+}
+.rechargeBox .ways .way-list .zfbPay .init {
+  background: url('../../Image/rechar-zhi.png') no-repeat;
+  background-size: 100% 100%;
+}
+.rechargeBox .ways .way-list .zfbPay .active {
+  background: url('../../Image/rechar-zhi1.png') no-repeat;
+  background-size: 100% 100%;
+}
+.rechargeBox .ways .way-detail ul {
+  overflow: hidden;
+}
+.rechargeBox .ways .way-detail ul li {
+  float: left;
+  width: 45%;
+  height: 2.4rem ;
+  font-size: .32rem;
+  text-align: center;
+  background-color: #F7EBE8;
+  border-radius: .13rem;
+  padding-top: .27rem;
+  margin-bottom: .4rem ;
+  position: relative;
+}
+.rechargeBox .ways .way-detail ul li .chargeNum {
+  color: #221802;
+}
+.rechargeBox .ways .way-detail ul li .chargeNum em {
+  font-size: .64rem;
+}
+.rechargeBox .ways .way-detail ul li p {
+  color: #999793 ;
+}
+.rechargeBox .ways .way-detail ul li .hot {
+  position: absolute;
+  top: 0;
+  right: .4rem ;
+  width: .43rem;
+}
+.rechargeBox .ways .way-detail ul .active {
+  background: url('../../Image/recharge.png') no-repeat;
+  background-size: 100% 100%;
+}
+.rechargeBox .ways .way-detail ul .active p {
+  color: #fff ;
+}
+.rechargeBox .ways .way-detail ul li:first-child {
+  float: left;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(2) {
+  float: right;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(3) {
+  float: left;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(4) {
+  float: right;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(5) {
+  float: left;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(6) {
+  float: right;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(7) {
+  float: left;
+}
+.rechargeBox .ways .way-detail ul li:nth-child(8) {
+  float: right;
+}
+.rechargeBox .ways .way-detail ul .yearMember {
+  width: 100%;
+  background: url('../../Image/rechar-vip.png') no-repeat;
+  background-size: 100% 100% ;
+  padding-top: .47rem ;
+}
+.rechargeBox .ways .way-detail ul .yearMember .chargeNum {
+  font-size: .48rem;
+  color: #7A6C4E ;
+}
+.rechargeBox .ways .way-detail ul .yearMember p {
+  color: #998D74 ;
+}
+.rechargeBox .ways .way-detail ul .yearMemberActive {
+  background: url('../../Image/rechar-vip1.png') no-repeat;
+  background-size: 100% 100% ;
+}
+.rechargeBox .ways .way-detail ul .yearMemberActive .chargeNum,
+.rechargeBox .ways .way-detail ul .yearMemberActive p {
+  color: #fff ;
+}
+.rechCopy {
+  padding: .27rem .47rem .67rem;
+}
+.rechCopy .passageway {
+  font-size: .32rem ;
+  color: #999793 ;
+  margin-bottom: .4rem ;
+}
+.rechCopy .loginOut {
+  background-color: #F16B59;
+  color: #fff ;
+}
+.rechCopy .copyRight p {
+  margin-bottom: .13rem ;
+}
+.record-Activities {
+  width: 100%;
+  min-height: 4rem ;
+  background: url('../../Image/rechargetop.png') no-repeat;
+  background-size: 100% 100% ;
+  padding: 1.05rem 1.2rem .4rem 1.0rem ;
+}
+.record-Activities .recordBox {
+  background: url('../../Image/yinhaored.png') no-repeat top left;
+  background-size: .33rem auto;
+  width: 100%;
+  padding-left: 0.35rem;
+}
+.record-Activities .recordBox .bigTitle {
+  font-size: .45rem ;
+  color: #F16B59 ;
+}
+.record-Activities .recordBox .record-tips {
+  font-size: .37rem ;
+  color: #666564;
+  margin-top: .13rem ;
+}
+.record-Activities .recordBox .record-time {
+  font-size: .32rem ;
+  color: #999793 ;
+  margin-top: .2rem ;
+}
+.activityCharge .ways .way-detail ul li {
+  width: 100%;
+}

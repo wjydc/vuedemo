@@ -1,0 +1,57 @@
+.classification {
+  padding: .4rem .47rem ;
+}
+.classification ul li {
+  font-size: .37rem;
+  color: #221802;
+  line-height: .48rem;
+  overflow: hidden ;
+  margin-bottom: .4rem ;
+}
+.classification ul li:last-child {
+  margin: 0;
+}
+.classification ul li label {
+  width: 1.33rem;
+  display: block;
+  float: left;
+  position: relative ;
+}
+.classification ul li div {
+  overflow: hidden;
+}
+.classification ul li div a {
+  display: inline-block;
+  font-size: .37rem;
+  color: #221802;
+  line-height: .48rem;
+  margin-right: .25rem ;
+  margin-bottom: .4rem ;
+}
+.classification ul li div .activeA {
+  color: #f2ac17;
+}
+.classification .newClassify {
+  display: none;
+}
+.classification .moreBnt {
+  border-top: 1px solid #e6ebf0;
+}
+.classification .moreBnt a {
+  display: block;
+  text-align: center;
+  height: .93rem ;
+  line-height: .93rem ;
+  color: #999793 ;
+  font-size: .37rem ;
+}
+.classification .moreBnt .show span {
+  background: url('../../Image/arrow.png') no-repeat right center;
+  background-size: .32rem auto;
+  padding-right: 0.35rem;
+}
+.classification .moreBnt .hide span {
+  background: url('../../Image/arrow-top.png') no-repeat right center;
+  background-size: .32rem auto;
+  padding-right: 0.35rem;
+}

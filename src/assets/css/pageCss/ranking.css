@@ -1,0 +1,117 @@
+.rangkBox {
+  width: 100%;
+  padding: .53rem 0;
+  position: absolute;
+  top: 3.07rem;
+}
+div[data-id="ranking"] {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+div[data-id="ranking"] .top {
+  height: 3.6rem;
+}
+div[data-id="ranking"] .bottom {
+  height: 3.69rem;
+}
+.boysRank .top {
+  background: url('../../Image/boyt.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.boysRank .bottom {
+  background: url('../../Image/boyb.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.girlRank .top {
+  background: url('../../Image/girlt.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.girlRank .bottom {
+  background: url('../../Image/girlb.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.totalRank .top {
+  background: url('../../Image/totalt.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.totalRank .bottom {
+  background: url('../../Image/totalb.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.tatal-ranking {
+  width: 100%;
+  min-height: 2.67rem ;
+  padding: .53rem .4rem .53rem 0;
+  overflow: hidden;
+}
+.tatal-ranking ol {
+  margin: 0 .53rem ;
+  float: left;
+  position: relative ;
+}
+.tatal-ranking ol li {
+  width: 1.33rem ;
+  height: 1.33rem ;
+  border-radius: .16rem ;
+  margin-bottom: .4rem ;
+}
+.tatal-ranking ol li a {
+  height: 1.33rem ;
+  border-radius: .16rem ;
+  display: block;
+  font-size: .32rem ;
+  text-align: center;
+  background-color: #FAF6EE ;
+  padding-top: .15rem ;
+}
+.tatal-ranking ol li a i {
+  font-size: .55rem ;
+  color: #B3A17D;
+}
+.tatal-ranking ol li a span {
+  display: block;
+  color: #999793;
+}
+.tatal-ranking ol .active a {
+  background-color: #F1A515 ;
+}
+.tatal-ranking ol .active a i,
+.tatal-ranking ol .active a span {
+  color: #fff ;
+}
+.tatal-ranking .total-right {
+  overflow: hidden;
+}
+.tatal-ranking .total-right .title {
+  font-size: .48rem;
+  color: #221802;
+  padding-bottom: .4rem ;
+  border-bottom: 1px solid #EBF0F5;
+}
+.tatal-ranking .total-right ul li {
+  margin: .67rem 0;
+}
+.tatal-ranking .total-right ul li a {
+  display: block;
+  font-size: .43rem ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap ;
+}
+.tatal-ranking .total-right ul li a label {
+  color: #CCC9C4 ;
+  margin-right: .4rem ;
+}
+.tatal-ranking .total-right ul li a span {
+  color: #221802;
+}
+.tatal-ranking .total-right ul li:first-child a label {
+  color: #E16767 ;
+}
+.tatal-ranking .total-right ul li:nth-child(2) a label {
+  color: #EF8E59 ;
+}
+.tatal-ranking .total-right ul li:nth-child(3) a label {
+  color: #F2AC17;
+}

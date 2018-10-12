@@ -1,0 +1,103 @@
+@import '../templateCss/mainColor.less' ;
+
+//主题色
+@mainColor:#F2AC17 ;
+//边框颜色
+@boderColor:#EBF0F5 ;
+// 标题颜色
+@titleColor:#221802 ;
+@lightColor :#BFBDB8 ;
+// 阴影
+@boxShadow: 0 0 .2rem #e8ecf0 ;
+@bookShadow: 0 0 .13rem #e8ecf0 ;
+@red : #F16B59 ;
+// ----------------------------------------------------------------
+// 阅读页
+// 收费章节  +  自动签到
+.modal-content{
+    .readSmallBox{
+        text-align: center;
+        p{
+            font-size:.4rem;
+            line-height: 1.6;
+            span{
+                color: @red ;
+            }
+        }
+    }
+}
+// 追书
+.modal-content{
+    .Binge-watching{
+        width:90%;
+        margin: 0 auto ;
+        .title{
+            font-size: .43rem ;
+            color: #998862 ;
+            margin-bottom: .67rem ;
+        }
+        .step{
+            margin-bottom: .53rem;
+            p{
+                font-size: .32rem ;
+                color: #999793 ;
+                span{
+                    color: @mainColor ;
+                }
+            }
+            img{
+                display: block;
+                margin:.4rem  auto 0;
+            }
+        }
+        .step1{
+            img{
+                width:  3.2rem ;
+            }
+        }
+        .step2{
+            img{
+                width:5.47rem;
+            }
+        }
+        .tips{
+            font-size: .32rem ;
+            color: #BFBDB8 ;
+            text-align: center;
+        }
+    }
+}
+
+// ----------------------------------------------------------------
+// 签到页面 关注
+.codeTop{
+    text-align: center;
+    background-color: #fff ;
+    .title{
+        color: #998862;
+        font-size: .43rem ;
+    }
+    .tips{
+        color: #999793;
+        font-size: .37rem ;
+        margin: .4rem 0 1.07rem ;
+    }
+    img{
+        width: 3.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

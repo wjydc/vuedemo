@@ -1,0 +1,203 @@
+@import '../templateCss/mainColor.less' ;
+
+//主题色
+@mainColor:#F2AC17 ;
+//边框颜色
+@boderColor:#EBF0F5 ;
+// 标题颜色
+@titleColor:#221802 ;
+@lightColor :#BFBDB8 ;
+// 阴影
+@boxShadow: 0 0 .2rem #e8ecf0 ;
+@bookShadow: 0 0 .13rem #e8ecf0 ;
+
+// 排行榜
+.rangkBox{
+    width:100%;
+    padding: .53rem 0;
+    position: absolute;
+    top:3.07rem; 
+}
+div[data-id="ranking"]{
+    width:100%;
+    position: absolute;
+    top: 0;
+    .top{
+        height: 3.6rem;
+    }
+    .bottom{
+        height: 3.69rem;
+    }
+}
+.boysRank{
+    .top{
+        background: url('../../Image/boyt.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .bottom{
+        background: url('../../Image/boyb.jpg') no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+.girlRank{
+    .top{
+        background: url('../../Image/girlt.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .bottom{
+        background: url('../../Image/girlb.jpg') no-repeat;
+        background-size: 100% auto;
+    }
+}
+.totalRank{
+    .top{
+        background: url('../../Image/totalt.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .bottom{
+        background: url('../../Image/totalb.jpg') no-repeat;
+        
+        background-size: 100% auto;
+    }
+}
+
+//  综合版
+.tatal-ranking{
+    width:100%;
+    min-height: 2.67rem ;
+    padding: .53rem .4rem .53rem 0;
+    overflow: hidden;
+    ol{
+        margin: 0 .53rem ;
+        float: left;
+        position: relative ;
+        li{
+            width:1.33rem ;
+            height: 1.33rem ;
+            border-radius: .16rem ;
+            margin-bottom: .4rem ;
+            a{
+                height: 1.33rem ;
+                border-radius: .16rem ;
+                display: block;
+                font-size: .32rem ;
+                text-align: center;
+                background-color: #FAF6EE ;
+                padding-top: .15rem ;
+                i{
+                    font-size: .55rem ;
+                    color: #B3A17D;
+                }
+                span{
+                    display: block;
+                    color: #999793
+                }
+            }
+        }
+        .active{
+            a{
+                background-color: #F1A515 ;
+                i,span{
+                    color: #fff ;
+                }
+            }
+        }
+    }
+    .total-right{
+        overflow: hidden;
+        .title{
+            font-size: .48rem;
+            color: @titleColor ;
+            padding-bottom:.4rem ;
+            border-bottom: 1px solid @boderColor ;
+        }
+        ul{
+            li{
+                margin: .67rem 0;
+                a{
+                    display: block;
+                    font-size: .43rem ;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap ;
+                    label{
+                        color: #CCC9C4 ;
+                        margin-right: .4rem ;
+                    }
+                    span{
+                        color: @titleColor ;
+                    }
+                }
+                &:first-child{
+                    a{label{ color: #E16767 ;}  }
+                    
+                }
+                &:nth-child(2){
+                   a{label{ color: #EF8E59 ;}  } 
+                   
+                }
+                &:nth-child(3){
+                   a{label{ color: #F2AC17;}  }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+@import '../templateCss/mainColor.less' ;
+
+// 广告轮播图
+.adveRotation{
+    background-color: transparent ;
+    padding:.3rem .47rem .4rem ;
+    .swiper-slide{
+        height: 2.93rem ;
+        border-radius: .13rem;
+        overflow: hidden;
+       
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .swiper-pagination-bullet{
+        width:.17rem ;
+        height: .17rem ;
+        background-color: #F00B0B ;
+        opacity:1;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: @mainColor ;
+        width:.31rem ;
+        border-radius: .08rem ;
+        opacity: 1 ;
+    }
+
+}
+
+// 最近阅读
+.recentReading{
+    padding:.27rem .47rem .53rem ;
+    .recentBox{
+        
+        background-color: #F7F4ED ;
+        overflow: hidden ;
+        padding: 0 .27rem ;
+        border-radius: .11rem;
+        a{
+            display: block ;
+        }
+        .latest{
+            float: left ;
+            width:75%;
+            height: .87rem;
+            line-height: .87rem;
+            font-size: .35rem;
+            color: @titleColor ;
+            overflow: hidden;
+            text-overflow: ellipsis ;
+            white-space: nowrap ;
+            i{
+                color: #EE9433 ;
+                font-size:.5rem;
+                display: inline-block; 
+                vertical-align: bottom ;
+                margin-right:.07rem;
+              
+            }
+        }
+        .readHistory{
+            float: right ;
+            height: .87rem;
+            line-height: .87rem;
+            font-size: .32rem ;
+            color:#F2AC17 ;
+            padding-top: .03rem ;
+            span{
+                line-height: 0;
+            }
+            i{
+                color: #EE9433 ;
+                font-size:0.25rem;
+            }
+        }
+    }
+}
+
+// 热门推荐
+.hot-recommend{
+    padding: 0 .47rem;
+    margin-bottom: .53rem ;
+    .bookList-Vertical{
+        li{
+            border-bottom: 1px solid @boderColor ;
+        }
+    }
+}
+
+
+// 广告
+.Advertisement{
+    padding:0 .47rem;
+    // text-align: justify ;
+    line-height: 0;
+    margin-bottom:.4rem;
+    // display: -webkit-flex; 
+    // display: flex ;
+    // justify-content: space-between ;
+    a{
+        display: block;
+        box-shadow: @boxShadow;
+        -moz-box-shadow:@boxShadow;
+        -webkit-box-shadow:@boxShadow;
+        img{
+            width:100% ;
+            // height: 2.13rem;
+            display: block;
+            border-radius: .13rem ;
+        }
+    }
+    // em{
+    //     display: inline-block;
+    //     width:100%;
+    // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

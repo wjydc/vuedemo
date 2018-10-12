@@ -1,0 +1,154 @@
+.sort {
+  font-size: .4rem ;
+  color: #1B90BE;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  width: 1.33rem ;
+  position: fixed;
+  top: 0;
+  right: .47rem;
+  z-index: 500;
+  text-align: right;
+}
+.sort i {
+  font-size: 0.4rem;
+}
+.head-middle p span {
+  background: url('../../Image/arrow.png') no-repeat right center;
+  background-size: .32rem auto;
+  padding-right: 0.4rem ;
+}
+.catalog {
+  padding: .67rem .47rem .13rem;
+  min-height: 11.0rem;
+}
+.catalog li {
+  margin-bottom: .67rem ;
+}
+.catalog li a {
+  display: block;
+  font-size: .4rem ;
+  color: #221802;
+  overflow: hidden ;
+}
+.catalog li a span {
+  display: inline-block;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis ;
+  white-space: nowrap;
+}
+.catalog li a img {
+  width: .35rem;
+  height: .35rem ;
+  float: right;
+  margin-top: .08rem ;
+}
+.chooseCharpter {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.chooseCharpter:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.chooseCharpter .charpterArea {
+  width: 100%;
+  height: 9.28rem ;
+  background-color: #fff ;
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: .13rem ;
+  border-top-right-radius: .13rem ;
+  z-index: 11;
+}
+.chooseCharpter .charpterArea .top {
+  height: 7.49rem ;
+  overflow-y: scroll ;
+  padding: .67rem .47rem 0;
+}
+.chooseCharpter .charpterArea .top ul li {
+  font-size: .4rem ;
+  padding-left: .87rem ;
+  margin-bottom: .67rem ;
+}
+.chooseCharpter .charpterArea .top ul .init {
+  background: url('../../Image/circle.png') no-repeat 0 center;
+  background-size: .43rem .43rem ;
+}
+.chooseCharpter .charpterArea .top ul .active {
+  background: url('../../Image/circlenew.png') no-repeat 0 center;
+  background-size: .43rem .43rem ;
+}
+.chooseCharpter .charpterArea .bottom {
+  height: 1.79rem;
+  padding: 0.27rem .47rem 0;
+}
+.chooseCharpter .charpterArea .bottom .loginOut {
+  color: #221802;
+  background: #f3f5f7;
+}
+/*换页*/
+.Turn_page {
+  height: 1.84375rem;
+  padding: 0.5rem  0.3125rem 0;
+}
+.Turn_page div {
+  width: 30%;
+  height: 0.84375rem;
+  line-height: 0.84375rem;
+  font-size: 0.4375rem;
+  border-radius: 0.046875rem;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  cursor: pointer;
+}
+.Turn_page .page_num {
+  position: relative;
+  margin: 0 5%;
+}
+.Turn_page .page_num .down {
+  width: 0.3125rem;
+  height: 0.3125rem;
+}
+.Turn_page .page_num select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.Turn_page .page_num select option {
+  display: block;
+  height: 0.78125rem;
+  font-size: 0.46875rem;
+  padding-top: 0.3125rem;
+}
+.Turn_page .previous_page {
+  color: #d9d9d9;
+  text-align: center;
+}
+.Turn_page .next_page {
+  text-align: center;
+}
+.Turn_page .choose_num {
+  color: #ff5c4d;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

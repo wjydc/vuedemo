@@ -1,0 +1,483 @@
+@import '../templateCss/mainColor.less' ;
+
+//主题色
+@mainColor:#F2AC17 ;
+//边框颜色
+@boderColor:#EBF0F5 ;
+// 标题颜色
+@titleColor:#221802 ;
+@lightColor :#BFBDB8 ;
+// 阴影
+@boxShadow: 0 0 .2rem #e8ecf0 ;
+@bookShadow: 0 0 .13rem #e8ecf0 ;
+@red : #F16B59 ;
+html,body{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+// 公共样式
+.wrap{
+    width: 100%;
+    min-height: 100%;
+    padding: .27rem .47rem .67rem;
+    .title{
+        font-size: .56rem ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap ;
+        color: @titleColor ;
+    }
+    .seeting{
+        margin: .67rem 0;
+        overflow: hidden;
+        .set-btns{
+            overflow: hidden ;
+            float: left;
+            a{
+                display: block;
+                width: .75rem ;
+                height: .75rem ;
+                float: left;
+                margin-right: .13rem ;
+            }
+            .day-bg1{
+                background: url('../../Image/read/day-bg1.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg2{
+                background: url('../../Image/read/day-bg2.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg3{
+                background: url('../../Image/read/day-bg3.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg4{
+                background: url('../../Image/read/day-bg4.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg5{
+                background: url('../../Image/read/day-bg5.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .night-modal{
+                background: url('../../Image/read/day-night.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .font-large{
+                background: url('../../Image/read/day-fontlarge.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .font-small{
+                background: url('../../Image/read/day-fontsmall.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+        }
+        .toIndex{
+            float: right;
+            display: block ;
+            width: 1.28rem ;
+            height: .75rem ;
+            text-align: center;
+            border-radius: .13rem ;
+            border:1px solid @boderColor ;
+            line-height: .75rem;
+            font-size: .35rem ;
+            color: #99958D ;
+        }
+    }
+    .reading-area{
+        color: @titleColor ;
+        p{
+            line-height: 1.7;
+            margin-bottom: .4rem ;
+            text-indent: 2.0em ;
+        }
+    }
+    .paging{
+        padding: 0 ;
+        margin: .67rem 0 .53rem;
+        .gray{
+            opacity: 0.5;
+        }
+    }
+    .Chasing{
+        text-align: center;
+        font-size: 0;
+        span{
+            font-size: .37rem;
+            padding-right: .16rem;
+            color: #F2AC17 ;
+        }
+        i{
+            color: #F2AC17 ;
+            font-size: .16rem ;
+        }
+    }
+
+    .read-recommend{
+        .recom-top{
+            margin: .53rem 0 .67rem;
+            padding-top: .53rem;
+            border-top:1px solid @boderColor;
+            .list{
+                padding: .53rem .47rem ;
+                ul{
+                    li{
+                        margin-bottom: .53rem ;
+                        &:last-child{ margin-bottom: 0;}
+                        a{
+                            overflow: hidden;
+                            display: block;
+                            .tobook{
+                                float: left;
+                                width:75%;
+                                overflow: hidden;
+                                text-overflow: ellipsis ;
+                                white-space: nowrap;
+                                font-size: .4rem ;
+                                color: #221802 ;
+                                height: 1.6em;
+                                line-height: 1.6em;
+                            }
+                            .toread{
+                                float: right ;
+                                font-size: .32rem ;
+                                color: #99958D ;
+                                height: 2.0em;
+                                line-height: 2.0em;
+                                i{
+                                    font-size:.16rem ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .read-wechat{
+            text-align: center ;
+            .we-icon{
+                width:100%;
+                position: relative;
+                border-top: 1px solid #EBF0F5 ;
+                margin-bottom: .53rem ;
+                span{
+                    display: block;
+                    width: .67rem;
+                    height: .37rem;
+                    text-align: center;
+                    background: url('../../Image/read/day-public.png') no-repeat center;
+                    background-size: .32rem .37rem;
+                    position: absolute;
+                    left:50%;
+                    margin-left: -.33rem ;
+                    top:-.19rem ;
+                    font-size: 0;
+                    background-color: #fff ;
+                   z-index: 10;
+                }
+              
+            }
+            .p1{
+                font-size: .37rem ;
+                color: #998862 ;
+            }
+            .p2{
+                font-size: .32rem ;
+                color: #999793 ;
+                margin:.27rem 0 .4rem;
+            }
+            .wx{
+                width: 3.2rem ;
+            }
+        }
+    }
+}
+
+.dayBg1{
+    background-color: #FAFCFE ;
+    .uterShadowo{
+        background-color: #FAFCFE ;
+    }
+}
+.dayBg2{
+    background-color: #FCFBF8 ;
+    .uterShadowo{
+        background-color: #FCFBF8 ;
+    }
+}
+.dayBg3{
+    background-color: #EFF1F8 ;
+    .uterShadowo{
+        background-color: #EFF1F8 ;
+    }
+     .seeting{
+         .toIndex{
+             border:1px solid #d8d8d8;
+         }
+     }
+    
+     .paging{
+        a{
+            border:1px solid #d8d8d8;
+        }
+     }
+
+     .read-recommend{
+         .recom-top{
+             border-top:1px solid #d8d8d8;
+         }
+         .read-wechat{
+             .we-icon{
+                 border-top: 1px solid #d8d8d8;
+                 span{
+                     background-color: #EFF1F8 ;
+                 }
+             }
+         }
+     }
+}
+.dayBg4{
+    background-color: #EDF2E9 ;
+    .uterShadowo{
+        background-color: #EDF2E9 ;
+    }
+    .seeting{
+        .toIndex{
+            border:1px solid #d8d8d8;
+        }
+    }
+   
+    .paging{
+       a{
+           border:1px solid #d8d8d8;
+       }
+    }
+
+    .read-recommend{
+        .recom-top{
+            border-top:1px solid #d8d8d8;
+        }
+        .read-wechat{
+            .we-icon{
+                border-top: 1px solid #d8d8d8;
+                span{
+                    background-color: #EDF2E9 ;
+                }
+            }
+        }
+    }
+}
+
+.dayBg5{
+    background-color: #F5F5F5;
+    .uterShadowo{
+        background-color: #F5F5F5;
+    }
+    .seeting{
+        .toIndex{
+            border:1px solid #d8d8d8;
+        }
+    }
+   
+    .paging{
+       a{
+           border:1px solid #d8d8d8;
+       }
+    }
+
+    .read-recommend{
+        .recom-top{
+            border-top:1px solid #d8d8d8;
+        }
+        .read-wechat{
+            .we-icon{
+                border-top: 1px solid #d8d8d8;
+                span{
+                    background-color: #F5F5F5;
+                }
+            }
+        }
+    }
+}
+
+
+// 黑夜模式
+.dayBg6{
+    background-color: #0D0C0C ;
+    .title{
+       color: #444444 ;
+       margin-bottom: .4rem;
+    }
+    .seeting{
+        .set-btns{
+            .day-bg1{
+                background: url('../../Image/read/night-bg1.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg2{
+                background: url('../../Image/read/night-bg2.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg3{
+                background: url('../../Image/read/night-bg3.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg4{
+                background: url('../../Image/read/night-bg4.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .day-bg5{
+                background: url('../../Image/read/night-bg5.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .night-modal{
+                background: url('../../Image/read/night-night.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .font-large{
+                background: url('../../Image/read/night-fontlarge.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .font-small{
+                background: url('../../Image/read/night-fontsmall.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+        }
+        .toIndex{
+            border:1px solid #444;
+            color: #66635A ;
+        }
+    }
+    .reading-area{
+        color: #444444 ; 
+    }
+    .paging{
+       a{
+           color: #66635A ;
+           border:1px solid #444444 ;
+       }
+       .gray{
+           opacity: 0.5;
+       }
+       .page-menu{
+            background: url('../../Image/menu1.png') no-repeat center;
+            background-size: .4rem .4rem;
+        }
+    }
+    .Chasing{
+        span{
+            color: #66635A ;
+        }
+        i{
+            color: #4C4941 ;
+        }
+    }
+    .read-recommend{
+        .recom-top{
+            border-top:1px solid #444;
+            .uterShadowo{
+                background-color: #131212 ;
+                box-shadow:0 0 .2rem #080808; 
+                -moz-box-shadow:0 0 .2rem #080808; 
+                -webkit-box-shadow:0 0 .2rem #080808;  
+            }
+            .list{
+                ul{
+                    li{
+                        a{
+                            .tobook{
+                                color: #444  ;
+                            }
+                            .toread{
+                                color: #66635A ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .read-wechat{
+            .we-icon{
+                border-top: 1px solid #444;
+                span{
+                   
+                    background: url('../../Image/read/night-public.png') no-repeat center;
+                    background-size: .32rem .37rem;
+
+                    background-color: #0D0C0C ;
+                }
+            }
+            .p1{
+                color: #444 ;
+            }
+            .p2{
+                color: #444 ;
+            }
+            .wx{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+
+
+// 字体大小
+.fontsize1{ 
+    font-size:.32rem ;
+}
+.fontsize2{
+    font-size:.34rem;
+}
+.fontsize3{
+    font-size:.36rem ;
+}
+.fontsize4{
+    font-size:.38rem ;
+}
+.fontsize5{
+    font-size:.4rem ;
+}
+.fontsize6{
+    font-size:.43rem ;
+}
+
+.fontsize7{
+    font-size:.53rem ;
+}
+.fontsize8{
+    font-size:.67rem;
+}
+.fontsize9{
+    font-size:.8rem ;
+}
+.fontsize10{
+    font-size:.93rem ;
+}
+.fontsize11{
+    font-size:1.07rem ;
+}
+.fontsize12{
+    font-size:1.2rem ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

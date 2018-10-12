@@ -1,0 +1,503 @@
+@import '../templateCss/mainColor.less' ;
+
+//主题色
+@mainColor:#F2AC17 ;
+//边框颜色
+@boderColor:#EBF0F5 ;
+// 标题颜色
+@titleColor:#221802 ;
+@lightColor :#BFBDB8 ;
+// 阴影
+
+@red : #F16B59 ;
+
+// 书及描述
+.detail-book{
+    width: 100%;
+   padding: 0 .47rem ;
+   position: relative;
+   z-index: 5;
+    .bookList-Vertical{
+        li{
+            padding:.4rem 0;
+            a{
+                .bokkCover{
+                    margin-right: .4rem ;
+                    border-radius:.2rem;
+                    overflow: hidden;
+                    box-shadow: 0 0 .2rem #B4B2B2; 
+                    -moz-box-shadow: 0 0 .2rem #B4B2B2;;
+                    -webkit-box-shadow:0 0 .2rem #B4B2B2;
+                    img{
+                        width:3.04rem;
+                        height:4rem ;
+                        border-radius: .2rem; 
+                    }
+                }
+                .bookDescript{
+                   
+                    .des-title{
+                        width:100%;
+                        font-size: .48rem ;
+                        padding: .4rem 0 0;
+                       
+                    }
+                    .des-label{
+                        margin:.27rem 0 .27rem;
+                        line-height: 0;
+                        span{
+                            display: inline-block;
+                            vertical-align: top;
+                            height: .48rem ;
+                            line-height: .48rem;
+                            border-radius: .24rem ;
+                            font-size: .32rem ;
+                            padding:0 .13rem;
+                            position: relative ;
+                            margin-right: .2rem ;
+                            &:after{
+                                content: ' ';
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                bottom: 0 ;
+                                left: 0;
+                                border-radius: .07rem ;
+                            }
+                        }
+                        .brown{
+                            color: #806B40 ;
+                            &:after{
+                                border:1px solid #806B40 ;
+                            }
+                            
+                        }
+                        .orange{
+                            color: #F2AC17 ; 
+                            &:after{
+                                border:1px solid #EE9433 ;
+                            }
+                            
+                        }
+                        .red{
+                            color: #C25211 ;
+                            &:after{
+                                border:1px solid red ;
+                            }
+                            
+                        }
+                    }
+                    .des-satatu{
+                        .seeNum{
+                            margin: 0;
+                        }
+                    }
+                   .des-bookNum{
+                       color: #BFBDB8 ;
+                       font-size: .32rem ;
+                       margin-top: .4rem ;
+                   }
+                }
+            }
+           
+        }
+       
+    }
+}
+
+// 高斯模糊
+.gaussBlur{
+    width: 100%;
+    height: 3.73rem ;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    .mainImg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        -webkit-filter: blur(50px); 
+          -moz-filter: blur(50px);
+           -ms-filter: blur(50px);    
+               filter: blur(50px);  
+    }
+    .blurImg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #fff ;
+        z-index: 3;
+        opacity: 0.8;
+        -webkit-filter: blur(50px); 
+        -moz-filter: blur(50px);
+         -ms-filter: blur(50px);    
+             filter: blur(50px); 
+    }
+}
+//  文本描述
+.detail-descript{
+    position: relative;
+    padding: 0 .47rem;
+    background: url('../../Image/yinhao.png') no-repeat .47rem  .1rem;
+    background-size: .48rem auto;
+    margin-top: .53rem ;
+    p{
+        font-size: .35rem ;
+        color: #999793 ;
+        line-height:.64rem;
+        text-indent: 0.6rem;
+        text-align: justify;
+    }
+    .showHideIcon{
+        display: block;
+        width:1.07rem;
+        height: .48rem ;
+        position: absolute;
+        bottom:0.1rem;
+        right: .47rem;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+.showWord{
+    p{
+        height: 1.92rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+       
+    }
+    .showHideIcon{
+        background: url('../../Image/show.png') no-repeat ;
+        background-size: 100% 100%;
+    }
+}
+.hideWord{
+    p{
+        height:auto;
+    }
+    .showHideIcon{
+        background: url('../../Image/show1.png') no-repeat ;
+        background-size: 100% 100%;
+        
+    }
+}
+
+
+// 打赏
+.detail-deward{
+    padding: 0 .47rem ;
+    margin: .67rem 0;
+    .deward-wrap{
+        width: 100%;
+        height: 1.33rem ;
+        background: url('../../Image/goodbg.png') no-repeat;
+        background-size:auto 100%;
+        border-radius: .24rem;
+        background-color: #F7EBE8;
+        padding: 0 .4rem;
+        overflow: hidden;
+        .deward-left{
+            float: left ;
+            height: 100%;
+            line-height: 1.33rem;
+            background: url('../../Image/good.png') no-repeat 0 center;
+            background-size: .45rem  auto;
+            padding-left: 0.5rem;
+            span{
+                font-size: .4rem ;
+                color: @titleColor ;
+                display: inline-block;
+                vertical-align: top;
+                padding-top: .05rem ;
+            }
+            em{
+                font-size: .43rem ;
+                color: @red ;
+                display: inline-block;
+                vertical-align: top;
+                padding-top: .05rem ;
+                font-weight:400;
+            }
+        }
+
+        .deward-right{
+            float: right ;
+            height: 100%;
+           padding-top:.315rem;
+           line-height: 0;
+            p{
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 0;
+                img{
+                    position: relative;
+                    width:.48rem ;
+                    height: .48rem ;
+                    border-radius: 50%;
+                }
+            }
+            .deward-btn{
+                display: inline-block;
+                vertical-align: middle;
+                width: 1.28rem;
+                height: .7rem;
+                color: #fff ;
+                border-radius: .13rem ;
+                background-color: @red ;
+                font-size: .37rem;
+                text-align: center;
+                line-height: .7rem;
+            }
+        }
+    }
+}
+
+// 目录
+.detail-directory{
+    padding: 0 .47rem ;
+    margin-bottom: .67rem ;
+    .directory-list{
+        min-height: 2.67rem ;
+        ul{
+            padding-top: .53rem ;
+            li{
+                a{
+                    display: block;
+                    font-size: .4rem ;
+                    color: @titleColor ;
+                    padding: 0 .4rem;
+                    height:.8rem;
+                    line-height: .8rem ;
+                    margin-bottom: .53rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap ;
+                }
+            }
+            .newest{
+               .newTitle{
+                   float: left;
+                   width:auto;
+                   max-width:65%;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   white-space: nowrap ;
+                   background: url('../../Image/new.png') no-repeat right center;
+                   background-size: .4rem auto;
+                   padding-right: .5rem ;
+               } 
+               .time{
+                   float: right;
+                   width: 35%;
+                   font-size: .32rem ;
+                   text-align: right;
+                   color: @lightColor ;
+               }
+            }
+        }
+    }
+}
+
+// 本书打赏 
+.theBook-reward{
+    padding: 0 .47rem ;
+    .reward-list{
+        // height:7.33rem;
+        // overflow-y: scroll;
+        ul{
+            li{
+                overflow: hidden;
+                padding: .53rem .4rem 0;
+                img{
+                    display: block;
+                    width: .8rem ;
+                    height: .8rem;
+                    border-radius: 50%;
+                    float: left;
+                    position: relative ; 
+                    margin-right: .27rem ;
+                }
+                div{
+                    overflow: hidden;
+                    border-bottom: 1px solid @boderColor ;
+                    padding-bottom: .53rem;
+                    .userNick{
+                        overflow: hidden;
+                        .nickName{
+                            font-size: .35rem ;
+                            color: @titleColor ;
+                            float: left;
+                        }
+                        .nickTime{
+                            font-size: .32rem ;
+                            color: @lightColor ;
+                            float: right;
+                        }
+                    }
+                    .giftNum{
+                        font-size:.35rem ;
+                        span{
+                            color: @lightColor ;
+                            margin-right: .13rem;
+                        }
+                        em{
+                            color: #806B40 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// 打赏图层
+.reward-Layer{
+    position: fixed ;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    &:after{
+        content:'';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 999;
+        background-color: #000 ;
+        opacity: 0.5 ;
+    }
+    .layerBox{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index:1000;
+        bottom: 0;
+        background-color: #fff ;
+        border-top-left-radius: .24rem ;
+        border-top-right-radius: .24rem ;
+        .title{
+            text-align: center ;
+            padding: .4rem .47rem;
+            font-size: .48rem ;
+            img{
+                float: right;
+                width: .35rem;
+            }
+        }
+        .imgIcon{
+            text-align: justify;
+            line-height: 0;
+           font-size: 0;
+           .chooseActive{
+               position: relative;
+               &:after{
+                   content: ' ';
+                   display: block;
+                   width: 100%;
+                   height: 100%;
+                   background: url('../../Image/gou.png') no-repeat right top;
+                   background-size: .48rem .48rem ;
+                   position: absolute;
+                   z-index:  10;
+                   top: 0;
+                   left: 0;
+               }
+           }
+            p{
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+                margin: 0 .8rem .53rem;
+                img{
+                    width: 1.33rem;
+                    height: 1.33rem;
+                }
+                i{
+                    display: block;
+                    font-size: .37rem ;
+                    color: @titleColor ;
+                    line-height: 1.5;
+                    font-style: normal;
+                }
+                span{
+                    font-size: .32rem ;
+                    color: @lightColor;
+                    display: block;
+                    line-height: 1.5;
+                }
+            }
+            .justify_fix{
+                display:inline-block; 
+                width:100%; 
+                height:0;
+                overflow:hidden;
+                padding:0;
+                margin: 0;
+                font-size: 0;
+            }
+        }
+    }
+
+    .numSetting{
+        padding:0 .47rem .4rem;
+        label{
+            font-size: .35rem ;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        div.number{
+            display: inline-block;
+            vertical-align: middle;
+           
+            input{
+               width:1.33rem ;
+                height:.96rem ;
+                font-size:.6rem;
+                border-radius: .13rem ;
+                border:none;
+                outline: none ;
+                text-align: center ;
+                background-color: #F8F7F5 ;
+                -moz-appearance:textfield;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                appearance: none; 
+                margin: 0; 
+            }
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                width: .96rem ;
+                height:.96rem ;
+                font-size:0.6rem;
+                font-weight: 600;
+                text-align: center;
+                line-height:.96rem ;
+                margin: 0 .2rem ;
+                color: #F2AC17 ;
+                border-radius:.13rem;
+                background-color: #F8F7F5 ;
+            }
+        }
+       
+    }
+
+    .loginOut{
+        background-color: @red;
+        color: #fff;
+        margin-top: .4rem;
+    }
+}
+

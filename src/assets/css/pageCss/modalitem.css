@@ -1,0 +1,60 @@
+.modal-content .readSmallBox {
+  text-align: center;
+}
+.modal-content .readSmallBox p {
+  font-size: .4rem;
+  line-height: 1.6;
+}
+.modal-content .readSmallBox p span {
+  color: #F16B59;
+}
+.modal-content .Binge-watching {
+  width: 90%;
+  margin: 0 auto ;
+}
+.modal-content .Binge-watching .title {
+  font-size: .43rem ;
+  color: #998862 ;
+  margin-bottom: .67rem ;
+}
+.modal-content .Binge-watching .step {
+  margin-bottom: .53rem;
+}
+.modal-content .Binge-watching .step p {
+  font-size: .32rem ;
+  color: #999793 ;
+}
+.modal-content .Binge-watching .step p span {
+  color: #F2AC17;
+}
+.modal-content .Binge-watching .step img {
+  display: block;
+  margin: .4rem  auto 0;
+}
+.modal-content .Binge-watching .step1 img {
+  width: 3.2rem ;
+}
+.modal-content .Binge-watching .step2 img {
+  width: 5.47rem;
+}
+.modal-content .Binge-watching .tips {
+  font-size: .32rem ;
+  color: #BFBDB8 ;
+  text-align: center;
+}
+.codeTop {
+  text-align: center;
+  background-color: #fff ;
+}
+.codeTop .title {
+  color: #998862;
+  font-size: .43rem ;
+}
+.codeTop .tips {
+  color: #999793;
+  font-size: .37rem ;
+  margin: .4rem 0 1.07rem ;
+}
+.codeTop img {
+  width: 3.2rem;
+}

@@ -1,0 +1,189 @@
+.moreListPage {
+  padding: .53rem .47rem 0;
+}
+.searchBox {
+  padding: .53rem .47rem ;
+}
+.searchBox .uterShadowo {
+  height: .96rem ;
+  width: 100%;
+  border-radius: .48rem ;
+  overflow: hidden;
+  position: relative ;
+}
+.searchBox .uterShadowo .searchIcon {
+  width: 1.09rem;
+  height: 100%;
+  background: url('../../Image/search.png') no-repeat center;
+  background-size: .43rem .43rem ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.searchBox .uterShadowo .searchInput {
+  display: block;
+  width: 100%;
+  height: .96rem;
+  font-size: .37rem ;
+  border: none;
+  outline: none;
+  padding: 0  2.3rem  0  1.09rem;
+}
+.searchBox .uterShadowo .searchInput::-webkit-input-placeholder {
+  font-size: 0.35rem;
+}
+.searchBox .uterShadowo .searchDele {
+  display: block;
+  height: 100%;
+  width: .8rem ;
+  background: url('../../Image/seardele.png') no-repeat center;
+  background-size: .43rem .43rem ;
+  position: absolute;
+  top: 0;
+  right: 1.50rem;
+  z-index: 1;
+  display: none;
+}
+.searchBox .uterShadowo .searchBtn {
+  display: block;
+  height: 100%;
+  width: 1.49rem ;
+  text-align: center;
+  line-height: .95rem ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  font-size: .37rem ;
+  background-color: #BFBDB8;
+  color: #fff ;
+}
+.searchPage .searchHistory {
+  padding: 0 .47rem .4rem ;
+}
+.searchPage .searchHistory ul {
+  overflow: hidden;
+  text-align: justify;
+}
+.searchPage .searchHistory ul li {
+  float: left;
+  margin: 0 .27rem .27rem 0;
+}
+.searchPage .searchHistory ul li a {
+  display: block;
+  padding: 0 .33rem;
+  height: .85rem;
+  line-height: .85rem;
+  border-radius: .43rem ;
+  background: #f0f1f2;
+  color: #807359 ;
+  font-size: .37rem ;
+}
+.searchResult .noData {
+  text-align: center;
+  padding-top: 3.33rem;
+}
+.searchResult .noData img {
+  width: auto;
+}
+.errorWrap {
+  text-align: center;
+  padding-top: 2.4rem ;
+}
+.errorWrap img {
+  width: 6.53rem;
+}
+.errorWrap p {
+  font-size: .43rem ;
+  color: #221802;
+}
+.errorWrap span {
+  display: block;
+  font-size: .32rem ;
+  color: #BFBDB8;
+  margin: .13rem 0 2.67rem;
+}
+.punchClock {
+  height: 8.79rem ;
+  padding-top: .67rem ;
+  text-align: center;
+}
+.punchClock img {
+  width: 7.15rem;
+}
+.punchClock p {
+  font-size: .37rem;
+  color: #898989 ;
+  margin: .4rem 0;
+}
+.punchClock p span {
+  color: #EE8D63 ;
+}
+.punchClock .midBtn {
+  font-size: .37rem ;
+}
+.punchClockSuccess {
+  height: 8.79rem ;
+  background: url('../../Image/singInscccess.png') no-repeat left 0.4rem;
+  background-size: 100% auto ;
+  text-align: center;
+  padding-top: 1.68rem;
+}
+.punchClockSuccess img {
+  width: 1.6rem ;
+}
+.punchClockSuccess p {
+  font-size: .56rem;
+  color: #806B40 ;
+}
+.punchClockSuccess span {
+  color: #999793;
+  font-size: .35rem ;
+  display: block;
+  margin: .13rem 0 1.87rem ;
+}
+.punchClockSuccess .midBtn {
+  background-color: #BFBDB8;
+}
+.punchClockCopy {
+  padding: 0 .47rem;
+}
+.punchClockCopy .copyRight {
+  padding-top: .53rem ;
+  border-top: 1px solid #EBF0F5;
+}
+.service {
+  height: 100%;
+  padding: 1.93rem .8rem 0;
+}
+.service .callway {
+  font-size: .43rem ;
+  margin-bottom: .6rem ;
+}
+.service .callway label {
+  color: #666461 ;
+}
+.service .callway span {
+  color: #221802 ;
+}
+.service .wx {
+  text-align: center;
+}
+.service .wx img {
+  width: 3.2rem ;
+  display: block ;
+  margin: 0 auto;
+}
+.service .wx span {
+  display: block ;
+  color: #999793 ;
+  font-size: .32rem ;
+  margin-top: .4rem ;
+}
+.service .work-time {
+  color: #BFBDB8 ;
+  font-size: .37rem ;
+  text-align: center;
+  margin-top: 4.2rem ;
+}

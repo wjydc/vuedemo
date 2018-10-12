@@ -1,0 +1,161 @@
+@import '../templateCss/mainColor.less' ;
+
+//主题色
+@mainColor:#F2AC17 ;
+//边框颜色
+@boderColor:#EBF0F5 ;
+// 标题颜色
+@titleColor:#221802 ;
+@lightColor :#BFBDB8 ;
+// 阴影
+@boxShadow: 0 0 .2rem #e8ecf0 ;
+@bookShadow: 0 0 .13rem #e8ecf0 ;
+@red : #F16B59 ;
+
+.myColection{
+    // 管理
+    .collectNum{
+        overflow: hidden;
+        line-height: .64rem ;
+        font-size: .32rem ;
+        padding: .53rem 0 .4rem;
+        .col-num{
+            float: left;
+        }
+        a{
+            float: right ;
+            display: block;
+            height: .64rem;
+            line-height: .64rem ;
+            text-align: center;
+            color: #99958D ;
+        }
+        .Admi{
+            display: block;
+            width: 1.28rem;
+            border-radius: .13rem ;
+            border: 1px solid @lightColor;
+        }
+        .chooseAll{
+            background: url('../../Image/circle2.png') no-repeat 0 center;
+            background-size: .43rem .43rem;
+            padding-left: 0.5rem;
+            display: none;
+        }
+    }
+
+    .bookList-Vertical{
+        .bokkCover{
+            position: relative;
+            .manage{
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top:0;
+                left: 0;
+                z-index: 1;
+                display: none ;
+                &:after{
+                    content:'' ;
+                    display: block;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #000 ;
+                    opacity: 0.6;
+                    z-index: 2;
+                }
+                strong{
+                    display: block;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 3;
+                }
+                .Choose{
+                    background: url('../../Image/circle3.png') no-repeat center;
+                    background-size:.43rem .43rem ;
+                }
+                .noChoose{
+                    background: url('../../Image/circle1.png') no-repeat center;
+                    background-size: .43rem .43rem ;
+                }
+            }
+           
+        }
+        .bookDescript{
+            .des-des{
+                width:100%;
+                height: auto;
+                margin: .4rem 0 .67rem ;
+                overflow: hidden;
+                text-overflow: ellipsis ;
+                white-space: nowrap;
+                display: block;
+                -webkit-line-clamp:none;
+                -webkit-box-orient:none;
+            }
+            .des-satatu{
+                font-size: .32rem ;
+                color: #BFBDB8 ;
+            }
+        }
+    }
+}
+
+
+
+.colectionBox{
+    width: 100%;
+    position: fixed;
+    bottom: 0 ;
+    left: 0;
+    height: 1.33rem ;
+    background-color: #fff ;
+    text-align: center;
+    z-index: 5;
+    display: none;
+    .loginOut{
+        width: 4.32rem ;
+        height: 1.07rem ;
+        line-height: 1.07rem;
+        display: inline-block;
+        margin:.13rem  .2rem 0;
+    }
+    .cancle{
+        background:rgba(243,245,247,1);
+        color: @titleColor ;
+    }
+    .delet{
+        background:rgba(241,107,89,1);
+        color: #fff ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

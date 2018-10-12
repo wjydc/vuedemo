@@ -1,0 +1,31 @@
+body {
+  background: url('../../Image/read/readover1.png') no-repeat left 1.2rem;
+  background-size: 100% auto ;
+}
+.readOver {
+  text-align: center;
+  padding-top: .8rem ;
+}
+.readOver img {
+  width: 1.6rem;
+}
+.readOver p {
+  font-size: .4rem;
+  color: #806B40;
+}
+.readOver span {
+  color: #999793;
+  font-size: .32rem;
+  display: block;
+  margin: .13rem 0 0;
+}
+.over-recommend {
+  padding: .53rem .47rem 0;
+  position: relative ;
+}
+.over-recommend .uterShadowo {
+  padding-bottom: .4rem;
+}
+.over-recommend .changeGroup {
+  margin-top: -0.53rem;
+}

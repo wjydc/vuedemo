@@ -1,0 +1,93 @@
+.adveRotation {
+  background-color: transparent ;
+  padding: .3rem .47rem .4rem ;
+}
+.adveRotation .swiper-slide {
+  height: 2.93rem ;
+  border-radius: .13rem;
+  overflow: hidden;
+}
+.adveRotation .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.adveRotation .swiper-pagination-bullet {
+  width: .17rem ;
+  height: .17rem ;
+  background-color: #F00B0B ;
+  opacity: 1;
+}
+.adveRotation .swiper-pagination-bullet-active {
+  background-color: #1B90BE;
+  width: .31rem ;
+  border-radius: .08rem ;
+  opacity: 1 ;
+}
+.recentReading {
+  padding: .27rem .47rem .53rem ;
+}
+.recentReading .recentBox {
+  background-color: #F7F4ED ;
+  overflow: hidden ;
+  padding: 0 .27rem ;
+  border-radius: .11rem;
+}
+.recentReading .recentBox a {
+  display: block ;
+}
+.recentReading .recentBox .latest {
+  float: left ;
+  width: 75%;
+  height: .87rem;
+  line-height: .87rem;
+  font-size: .35rem;
+  color: #221802;
+  overflow: hidden;
+  text-overflow: ellipsis ;
+  white-space: nowrap ;
+}
+.recentReading .recentBox .latest i {
+  color: #EE9433 ;
+  font-size: .5rem;
+  display: inline-block;
+  vertical-align: bottom ;
+  margin-right: .07rem;
+}
+.recentReading .recentBox .readHistory {
+  float: right ;
+  height: .87rem;
+  line-height: .87rem;
+  font-size: .32rem ;
+  color: #F2AC17 ;
+  padding-top: .03rem ;
+}
+.recentReading .recentBox .readHistory span {
+  line-height: 0;
+}
+.recentReading .recentBox .readHistory i {
+  color: #EE9433 ;
+  font-size: 0.25rem;
+}
+.hot-recommend {
+  padding: 0 .47rem;
+  margin-bottom: .53rem ;
+}
+.hot-recommend .bookList-Vertical li {
+  border-bottom: 1px solid #EBF0F5;
+}
+.Advertisement {
+  padding: 0 .47rem;
+  line-height: 0;
+  margin-bottom: .4rem;
+}
+.Advertisement a {
+  display: block;
+  box-shadow: 0 0 0.2rem #e8ecf0;
+  -moz-box-shadow: 0 0 0.2rem #e8ecf0;
+  -webkit-box-shadow: 0 0 0.2rem #e8ecf0;
+}
+.Advertisement a img {
+  width: 100% ;
+  display: block;
+  border-radius: .13rem ;
+}
